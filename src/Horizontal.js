@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export function Accordion(props){
+export function HorizontalAccordion(props){
     return(
         <>
         </>
@@ -9,7 +9,7 @@ export function Accordion(props){
 }
 
 
-export function AccordionItem(props){
+export function HorizontalAccordionItem(props){
     return(
         <>
         
@@ -17,7 +17,7 @@ export function AccordionItem(props){
     )
 }
 
-export function Title(props) {
+export function HorizontalTitle(props) {
     console.log("props",props);
     return (
         <div style={{ ...props.style }} data-accordion-title>
@@ -26,7 +26,7 @@ export function Title(props) {
     )
 }
 
-export function Content(props) {
+export function HorizontalContent(props) {
     return (
         <div style={{ ...props.style }} data-accordion-title>
             {props.children}
