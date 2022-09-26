@@ -12,11 +12,7 @@ function Accordion() {
                 {Data.map((item, idx) => {
                      return (
                         <li key={idx}>
-                            {/* <AccordionItem {...item} /> */}
-                            {/* HIii */}
-                             <AccordionHeading>
-                                 {item.content}
-                             </AccordionHeading>
+                            <AccordionItem {...item} />
                         </li>
                      )
                 })}
