@@ -1,8 +1,7 @@
 import React from 'react';
-import './Accordion.module.scss';
+import './HorizontalAccordion.module.scss'
 
-function AccordionContent(props) {
-    console.log("props", props.children);
+function HorizontalAccordionContent(props) {
     return (
         <section>
             <div>
@@ -12,4 +11,4 @@ function AccordionContent(props) {
     );
 }
 
-export default AccordionContent;
+export default HorizontalAccordionContent;

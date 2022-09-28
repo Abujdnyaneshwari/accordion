@@ -1,5 +1,5 @@
 import React from 'react';
-import './Accordion.module.scss';
+import './HorizontalAccordion.module.scss';
 
 function AccordionItem(props) {
     return (

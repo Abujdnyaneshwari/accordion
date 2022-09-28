@@ -1,0 +1,41 @@
+$max-tabs: 3;
+$tab-width: 80px;
+$animation-time: 500ms;
+
+.horizontalAccordion{
+    
+    ul {
+        list-style: none;
+        li {
+            input {
+                display: none;   
+            }
+            label {
+                display: block;
+                padding: 0px 20px;
+                float: left;
+                height: calc(100vh - 80px);
+                overflow: hidden;
+                text-align: center;
+                cursor: pointer;
+            }
+    
+            section {
+                display: block;
+                width: 0px;
+                padding: 0;
+                float: left;
+                overflow: hidden;
+                position: relative;
+                border: none;
+                background-color: #fff;
+                transition: width $animation-time ease;
+            }
+        }
+
+        li input[type="radio"]:checked ~ section {
+            width: calc(100vw - #{$max-tabs * $tab-width});
+        }
+    }
+}
+

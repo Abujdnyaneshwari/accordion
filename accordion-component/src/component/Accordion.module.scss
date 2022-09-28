@@ -1,49 +1,52 @@
-li input[type="checkbox"]:checked ~ section {
-    transition: height 2s ease;
-}
-
-ul {
-    list-style: none;
-    li {    
-      input {
-            display: none; 
-        }
-
-        label {
-            display: block;
-            float: left;
-            overflow: hidden;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        input[type="checkbox"]:checked ~ label > * {
-          font-weight: bold;
-          border-bottom: 1px solid #000;
-        }
-
-        input[type="checkbox"]:not(:checked) ~ label > * {
-            white-space: nowrap;
-            
-        }
-
-        input[type="checkbox"] ~ section {
-          border:1px solid #000000;
-        }
-
-        section {
-            display: block;
-            height: 0px;
-            padding: 0;
-            float: left;
-            overflow: hidden;
-            position: relative;
-            border: none;
-            transition: height 0.5s ease;
-        }
-    }
-
+.verticalAccordion{
     li input[type="checkbox"]:checked ~ section {
-        height: auto;
+        transition: height 2s ease;
     }
+    
+    ul {
+        list-style: none;
+        li {    
+          input {
+                display: none; 
+            }
+    
+            label {
+                display: block;
+                float: left;
+                overflow: hidden;
+                cursor: pointer;
+                width: 100%;
+            }
+    
+            input[type="checkbox"]:checked ~ label > * {
+              font-weight: bold;
+              border-bottom: 1px solid #000;
+            }
+    
+            input[type="checkbox"]:not(:checked) ~ label > * {
+                white-space: nowrap;
+                
+            }
+    
+            input[type="checkbox"] ~ section {
+              border:1px solid #000000;
+            }
+    
+            section {
+                display: block;
+                height: 0px;
+                padding: 0;
+                float: left;
+                overflow: hidden;
+                position: relative;
+                border: none;
+                transition: height 0.5s ease;
+            }
+        }
+    
+        li input[type="checkbox"]:checked ~ section {
+            height: auto;
+        }
+    }
+    
 }
