@@ -18,17 +18,17 @@
                 width: 100%;
             }
     
-            input[type="checkbox"]:checked ~ label > * {
+            input:where([type="checkbox"], [type="radio"]):checked ~ label > * {
               font-weight: bold;
               border-bottom: 1px solid #000;
             }
     
-            input[type="checkbox"]:not(:checked) ~ label > * {
+            input:where([type="checkbox"], [type="radio"]):not(:checked) ~ label > * {
                 white-space: nowrap;
                 
             }
     
-            input[type="checkbox"] ~ section {
+            input:where([type="checkbox"], [type="radio"]) ~ section {
               border:1px solid #000000;
             }
     
@@ -44,7 +44,7 @@
             }
         }
     
-        li input[type="checkbox"]:checked ~ section {
+        li input:where([type="checkbox"], [type="radio"]):checked ~ section {
             height: auto;
         }
     }

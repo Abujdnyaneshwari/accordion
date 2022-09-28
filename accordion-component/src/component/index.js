@@ -11,7 +11,7 @@ function Accordion() {
                 {Data.map((item, idx) => {
                      return (
                         <li key={idx}>
-                            <AccordionHeading id={idx} className='text-[#000]'>
+                            <AccordionHeading id={idx} className='text-[#000]' preExpanded={0} allowMultiSelect={true}> 
                                 <div className='flex items-center'>
                                     <div className='font-bold'>
                                         {item.title}
