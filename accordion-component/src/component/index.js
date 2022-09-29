@@ -9,14 +9,14 @@ function Accordion() {
         <div className={style.verticalAccordion}>
             <ul>
                 {Data.map((item, idx) => {
-                     return (
+                    return (
                         <li key={idx}>
-                            <AccordionHeading id={idx} className='text-[#000]' preExpanded={0} allowMultiSelect={true}> 
-                                <div className='flex items-center'>
+                            <AccordionHeading id={idx} className='text-[#000]' preExpanded={[0]} allowMultiSelect={true}>
+                                <div className='flex items-center justify-between'>
                                     <div className='font-bold'>
                                         {item.title}
                                     </div>
-                                    <div className='pl-[10px]'>
+                                    <div className={`${style.arrowRotate}`}>
                                         <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1 1L9.25806 9L17 1" stroke="black" strokeWidth="2" strokeLinecap="round" />
                                         </svg>
@@ -30,7 +30,7 @@ function Accordion() {
                                 </div>
                             </AccordionContent>
                         </li>
-                     )
+                    )
                 })}
             </ul>
         </div>

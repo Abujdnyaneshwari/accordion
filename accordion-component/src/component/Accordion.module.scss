@@ -1,15 +1,16 @@
-.verticalAccordion{
-    li input[type="checkbox"]:checked ~ section {
+.verticalAccordion {
+    li input[type="checkbox"]:checked~section {
         transition: height 2s ease;
     }
-    
+
     ul {
         list-style: none;
-        li {    
-          input {
-                display: none; 
+
+        li {
+            input {
+                display: none;
             }
-    
+
             label {
                 display: block;
                 float: left;
@@ -17,21 +18,23 @@
                 cursor: pointer;
                 width: 100%;
             }
-    
-            input:where([type="checkbox"], [type="radio"]):checked ~ label > * {
-              font-weight: bold;
-              border-bottom: 1px solid #000;
+
+            input:where([type="checkbox"], [type="radio"]):checked~label>* {
+                font-weight: bold;
+                border-bottom: 1px solid #000;
+                .arrowRotate {
+                    transform: rotate(180deg);
+                }
             }
-    
-            input:where([type="checkbox"], [type="radio"]):not(:checked) ~ label > * {
+
+            input:where([type="checkbox"], [type="radio"]):not(:checked)~label>* {
                 white-space: nowrap;
-                
             }
-    
-            input:where([type="checkbox"], [type="radio"]) ~ section {
-              border:1px solid #000000;
+
+            input:where([type="checkbox"], [type="radio"])~section {
+                border: 1px solid #000000;
             }
-    
+
             section {
                 display: block;
                 height: 0px;
@@ -43,10 +46,10 @@
                 transition: height 0.5s ease;
             }
         }
-    
-        li input:where([type="checkbox"], [type="radio"]):checked ~ section {
+
+        li input:where([type="checkbox"], [type="radio"]):checked~section {
             height: auto;
         }
     }
-    
+
 }

@@ -14,7 +14,7 @@ function HorizontalAccordion() {
 
                             <HorizontalAccordionHeading  id={idx} preExpanded={0}>
                                 <div className='flex justify-center items-center'>
-                                    <div className='font-bold'>
+                                    <div className='font-bold origin-center -rotate-90'>
                                         {item.title}
                                     </div>
                                 </div>

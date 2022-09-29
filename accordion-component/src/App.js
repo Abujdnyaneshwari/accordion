@@ -4,13 +4,16 @@ import HorizontalAccordion from './component/HorizontalAccordion';
 
 function App() {
   return (
-    <>
-      <div className='font-bold pt-[20px]'> vertical Accordion</div>
-      <Accordion />
-
-      <div className='font-bold mt-[50px] pt-[80px]'> Horizontal Accordion</div>
-      <HorizontalAccordion />
-    </>
+    <div>
+      <div className='md:hidden container px-[20px]'>  
+        <div className='font-bold pt-[20px]'> vertical Accordion</div>
+        <Accordion />
+      </div>
+      <div className='hidden md:block'>  
+        <div className='font-bold'> Horizontal Accordion</div>
+        <HorizontalAccordion />
+      </div>
+    </div>
   );
 }
 
